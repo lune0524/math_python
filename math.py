@@ -79,34 +79,33 @@
 # plt.ylabel("Y 축")
 # plt.show()
 
-#u = [1,3], v = [-3,2]일 때, u - v를 계산하고  matplotib을 이용하여 시각화하기
-import numpy as np
-import matplotlib.pyplot as plt
+# #u = [1,3], v = [-3,2]일 때, u - v를 계산하고  matplotib을 이용하여 시각화하기
+# import numpy as np
+# import matplotlib.pyplot as plt
 
-# 벡터 정의
-u = np.array([1, 3])
-v = np.array([-3, 2])
-u_minus_v = u - v
+# # 벡터 정의
+# u = np.array([1, 3])
+# v = np.array([-3, 2])
+# u_minus_v = u - v
 
-# 그래프 생성
-plt.figure(figsize=(8, 8))
+# # 그래프 생성
+# plt.figure(figsize=(8, 8))
 
-# 벡터 u
-plt.quiver(0, 0, u[0], u[1], angles='xy', scale_units='xy', scale=1, color='blue', label='u = [1, 3]')
-# 벡터 v
-plt.quiver(0, 0, v[0], v[1], angles='xy', scale_units='xy', scale=1, color='green', label='v = [-3, 2]')
-# 벡터 u - v
-plt.quiver(0, 0, u_minus_v[0], u_minus_v[1], angles='xy', scale_units='xy', scale=1, color='red', label='u - v = [4, 1]')
+# # 벡터 u
+# plt.quiver(0, 0, u[0], u[1], angles='xy', scale_units='xy', scale=1, color='blue', label='u = [1, 3]')
+# # 벡터 v
+# plt.quiver(0, 0, v[0], v[1], angles='xy', scale_units='xy', scale=1, color='green', label='v = [-3, 2]')
+# # 벡터 u - v
+# plt.quiver(0, 0, u_minus_v[0], u_minus_v[1], angles='xy', scale_units='xy', scale=1, color='red', label='u - v = [4, 1]')
 
-# 그래프 설정
-plt.xlim(-5, 5)
-plt.ylim(-5, 5)
-plt.grid()
-plt.axhline(0, color='black', linewidth=0.5)
-plt.axvline(0, color='black', linewidth=0.5)
-plt.legend()
-plt.xlabel("X 축")
-plt.ylabel("Y 축")
-plt.show()
+# # 그래프 설정
+# plt.xlim(-5, 5)
+# plt.ylim(-5, 5)
+# plt.grid()
+# plt.axhline(0, color='black', linewidth=0.5)
+# plt.axvline(0, color='black', linewidth=0.5)
+# plt.legend()
+# plt.xlabel("X 축")
+# plt.ylabel("Y 축")
+# plt.show()
 
-#v=[2,4]잏 때
